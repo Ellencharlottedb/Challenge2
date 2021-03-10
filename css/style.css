@@ -1,0 +1,225 @@
+/*------------------------------- mobile ------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@media only screen and (min-width: 375px){
+
+	body{
+		font-family: Roboto Mono, sans-serif;
+		background-color: #300067;
+		color:#FFFFFF;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		display:flex;
+		flex-wrap: wrap;
+		/*max-width: 375px;*/
+	}
+	main {
+		margin-top: 2em;
+		padding: 1em 0em;
+		width: 100%;
+	}
+	h1{
+		font-size: 38px;
+		margin-left: 0.5em;
+		/*width: 90vw;*/
+
+	}
+	h2 {
+		margin-top: 2em;
+		font-size: 24px;
+		padding-left: 1em;
+	}
+	p{
+		font-size: 14px;
+		margin-top:-3px;
+		margin-left: 1.2em;
+	}
+
+	.container{
+		margin-top: 2em;
+		margin-left: 0.5em;
+		display:flex;
+	 	width: 100%;
+	 	text-align: center;
+	}
+	.container2{
+		margin-top: 2em;
+		margin-left: 0.5em;
+		display:flex;
+	 	width: 100%;
+	 	text-align: center;
+	}
+	.container3{
+		margin-top: 2em;
+		margin-left: 0.5em;
+		display:flex;
+	  	width: 100%;
+	  	text-align: center;
+	}
+	
+	#spacex{
+		margin-left: 0.5em;
+		width: 50%;
+		transform: rotate(35deg);
+	}
+	#afbeelding{
+		text-align: center;
+}
+}
+
+/* ----------------- ipad ---------------------- */
+@media only screen and (min-width: 768px){
+	header{
+		display:flex;
+		grid-template-columns: 1fr 1fr;
+	}
+	main{
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+	h1{
+		font-size: 48px;
+		margin-left: 0.5em;
+		/*width: 90vw;*/
+
+	}
+	h2 {
+		margin-top: 2em;
+		font-size: 28px;
+		padding-left: 1em;
+	}
+	p{
+		font-size: 22px;
+		margin-top:-3px;
+		margin-left: 1.2em;
+	}
+		.container{
+		margin-left: 2em;
+		display:flex;
+	 	width: 80%;
+	 	text-align: center;
+	}
+	.container2{
+		margin-left: 2em;
+		display:flex;
+	 	width: 80%;
+	 	text-align: center;
+	}
+	.container3{
+		margin-left: 2em;
+		display:flex;
+	  	width: 80%;
+	  	text-align: center;
+	}
+	
+	#spacex{
+		margin-left: 0.5em;
+		width: 70%;
+		transform: rotate(35deg);
+	}
+	#afbeelding{
+		text-align: right;
+}
+
+/*------------------------------- laptop ------------------------------- */
+@media only screen and (min-width: 1024px){
+	header{
+		display:flex;
+		grid-template-columns: 1fr 1fr;
+		margin-top:20px;
+	}
+	main{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 80px;
+	}
+	h1{
+		font-size: 60px;
+		margin-left: 0.5em;
+		/*width: 90vw;*/
+
+	}
+	h2 {
+		font-size: 32px;
+		padding-left: 1em;
+	}
+	p{
+		font-size: 22px;
+		margin-top:-3px;
+		margin-left: 1.2em;
+	}
+	.container{
+		margin-left: 2em;
+		display:flex;
+	 	width: 90%;
+	 	text-align: center;
+	}
+	.container2{
+		margin-left: 2em;
+		display:flex;
+	 	width: 90%;
+	 	text-align: center;
+	}
+	.container3{
+		margin-left: 2em;
+		display:flex;
+	  	width: 90%;
+	  	text-align: center;
+	}
+}
+/*------------------------------- groot scherm ------------------------------- */
+@media only screen and (min-width: 1720px){
+	header{
+		display:flex;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top:20px;
+	}
+	main{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background-color:#300067;
+		margin-top: 80px;
+	}
+	h1{
+		font-size: 80px;
+		margin-left: 0.5em;
+		/*width: 90vw;*/
+		margin-right:2em;
+
+	}
+	h2 {
+		font-size: 48px;
+		padding-left: 4em;
+	}
+	p{
+		font-size: 38px;
+		margin-top:-3px;
+		margin-left: 1.2em;
+	}
+	.container{
+		/*margin: -0,5em;*/
+		display:flex;
+	 	width: 90%;
+	 	/*text-align: center;*/
+	}
+	.container2{
+		/*margin: 0,5em;*/
+		display:flex;
+	 	width: 90%;
+	 	/*text-align: center;*/
+	}
+	.container3{
+		/*margin: 0,5em;*/
+		display:flex;
+	  	width: 90%;
+	  	/*text-align: center;*/
+	}
+	#spacex{
+		margin: 2em;
+		padding-left: 2em;
+		float:right;
+		width: 70%;
+		transform: rotate(35deg);
+	}
+}
