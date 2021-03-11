@@ -1,59 +1,74 @@
 /*------------------------------- mobile ------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');*/
 @media only screen and (min-width: 375px){
-
-	body{
-		font-family: Roboto Mono, sans-serif;
-		background-color: #300067;
-		color:#FFFFFF;
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-		width: 100%;
-		display:flex;
-		flex-wrap: wrap;
-		/*max-width: 375px;*/
-	}
-	main {
-		margin-top: 2em;
-		padding: 1em 0em;
-		width: 100%;
-	}
-	h1{
-		font-size: 38px;
-		margin-left: 0.5em;
-		/*width: 90vw;*/
-
-	}
-	h2 {
-		margin-top: 2em;
-		font-size: 24px;
-		padding-left: 1em;
-	}
-	p{
-		font-size: 14px;
-		margin-top:-3px;
-		margin-left: 1.2em;
-	}
-
-	/*.container{
-		margin-top: 2em;
-		margin-left: 0.5em;
-		display:flex;
-	 	width: 100%;
-	 	text-align: center;
-	}*/
-	
-	
-	#spacex{
-		margin-left: 0.5em;
-		width: 50%;
-		transform: rotate(35deg);
-	}
-	#afbeelding{
-		text-align: center;
+	*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #300067;
 }
+.wrapper{
+  height: 200px;
+  width: 720px;
+  position: relative;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  cursor: default;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .display{
+  z-index: 999;
+  height: 170px;
+  width: 690px;
+  background: #1b1b1b;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  width: 100%;
+  line-height: 150px;
+  color: #fff;
+  text-align: center;
+  font-size: 110px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.wrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper span:first-child{
+  filter: blur(7px);
+}
+.wrapper span:last-child{
+  filter: blur(20px);
+}
+
+
+	
 
 /* ----------------- ipad ---------------------- */
 @media only screen and (min-width: 768px){
@@ -100,37 +115,69 @@
 
 /*------------------------------- laptop ------------------------------- */
 @media only screen and (min-width: 1024px){
-	header{
-		display:flex;
-		grid-template-columns: 1fr 1fr;
-		margin-top:20px;
-	}
-	main{
-		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin-top: 80px;
-	}
-	h1{
-		font-size: 60px;
-		margin-left: 0.5em;
-		/*width: 90vw;*/
-
-	}
-	h2 {
-		font-size: 32px;
-		padding-left: 1em;
-	}
-	p{
-		font-size: 22px;
-		margin-top:-3px;
-		margin-left: 1.2em;
-	}
-	.container{
-		margin-left: 2em;
-		display:flex;
-	 	width: 90%;
-	 	text-align: center;
-	}
+	*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #300067;
+}
+.wrapper{
+  height: 100px;
+  width: 360px;
+  position: relative;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  cursor: default;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .display{
+  z-index: 999;
+  height: 85px;
+  width: 345px;
+  background: #1b1b1b;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  line-height: 85px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.wrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper span:first-child{
+  filter: blur(7px);
+}
+.wrapper span:last-child{
+  filter: blur(20px);
+}
 	
 }
 /*------------------------------- groot scherm ------------------------------- */
