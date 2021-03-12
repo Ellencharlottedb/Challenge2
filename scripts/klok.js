@@ -12,7 +12,7 @@
 
 // addLeadingZero();
 
-      setInterval(()=>{
+ setInterval(()=>{
         const time = document.querySelector(".display #time");
         let date = new Date();
         let hours = date.getHours();
@@ -34,3 +34,25 @@
         }
         time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
       });
+
+
+ function updateBackground() {
+  var hr = (new Date()).getHours(); 
+    // alert(hr);   
+  if (hr < 10) {
+    document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/schemer.jpg')";
+  
+
+  } else if (hr < 20) {
+  	// alert("Chris is de beste javascript docent");
+  	document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/dag.jpg')";
+
+}
+ else {
+    document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/nacht.jpg')";
+  } 
+}
+
+setInterval(updateBackground, 1000 * 60);
+updateBackground();
+
