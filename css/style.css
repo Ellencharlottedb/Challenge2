@@ -4,7 +4,7 @@
 	*{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Roboto Mono, sans-serif;
 }
 
 html,body{
@@ -12,14 +12,26 @@ html,body{
   padding: 0;
   margin: 0;
   height: 100%;
-  /*place-items: center;*/
   background: #300067;
 }
+header{
+	color:#FFFFFF;
+	margin-left: 0,5em;
+}
 main{
+	margin-top:-60em;
 	place-items: center;
 }
+h1{
+	margin-top: 2em;
+	font-size: 120px;
+
+}
+p{
+	font-size:38;
+	margin-bottom: -70px;
+}
 .wrapper{
-	place-items: center;
   text-align: center;
   height: 200px;
   width: 720px;
@@ -31,7 +43,6 @@ main{
 }
 .wrapper .display,
 .wrapper span{
-	place-items: center;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -39,7 +50,6 @@ main{
   transform: translate(-50%, -50%);
 }
 .wrapper .display{
-	place-items: center;
   text-align: center;
   z-index: 999;
   height: 170px;
@@ -49,13 +59,12 @@ main{
   text-align: center;
 }
 .display #time{
-	place-items: center;
   text-align: center;
   width: 100%;
   line-height: 150px;
   color: #fff;
   text-align: center;
-  font-size: 108px;
+  font-size: 85px;
   font-weight: 600;
   letter-spacing: 1px;
   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
@@ -91,25 +100,26 @@ main{
 		display:flex;
 		grid-template-columns: 1fr 1fr;
 	}
+	header{
+		margin-left: 2em;
+	}
 	main{
 		display:grid;
 		grid-template-columns: 1fr;
+		margin-top:0em;
+		place-items: center;
+		
 	}
 	h1{
-		font-size: 48px;
-		margin-left: 0.5em;
-		/*width: 90vw;*/
+		font-size: 120px;
+		
 
 	}
-	h2 {
-		margin-top: 2em;
-		font-size: 28px;
-		padding-left: 1em;
-	}
 	p{
-		font-size: 22px;
+		font-size: 44px;
 		margin-top:-3px;
-		margin-left: 1.2em;
+		margin-bottom: -70px;
+		
 	}
 		.container{
 		margin-left: 2em;
@@ -130,7 +140,7 @@ main{
 
 /*------------------------------- laptop ------------------------------- */
 @media only screen and (min-width: 1024px){
-	*{
+/*	*{
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -194,10 +204,10 @@ html,body{
   filter: blur(20px);
 }
 	
-}
+}*/
 /*------------------------------- groot scherm ------------------------------- */
 @media only screen and (min-width: 1720px){
-	header{
+/*	header{
 		display:flex;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-top:20px;
@@ -211,7 +221,6 @@ html,body{
 	h1{
 		font-size: 80px;
 		margin-left: 0.5em;
-		/*width: 90vw;*/
 		margin-right:2em;
 
 	}
@@ -225,10 +234,8 @@ html,body{
 		margin-left: 1.2em;
 	}
 	.container{
-		/*margin: -0,5em;*/
 		display:flex;
 	 	width: 90%;
-	 	/*text-align: center;*/
 	}
 
 	#spacex{
@@ -238,4 +245,4 @@ html,body{
 		width: 70%;
 		transform: rotate(35deg);
 	}
-}
+}*/
