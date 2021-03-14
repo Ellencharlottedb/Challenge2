@@ -24,34 +24,35 @@ Ik heb echt geen idee wat er steeds fout gaat.*/
 	header{
 		grid-template-columns: 1fr;
 		color:#FFFFFF;
-		margin-left: 0,5em;
+		margin-left: 2em;
 		margin-bottom: -30px;
 	}
 	main{
 		margin-top:0;
 		place-items: center;
+		justify-content: center;
 	}
 	h1{
-		margin-top: 2em;
-		font-size: 120px;
+		margin-top: 0.5em;
+		font-size: 48px;
 
 	}
 	p{
-		font-size:38px;
+		font-size:28px;
 	}
 	#spacex{
-		margin-left: 0.5em;
-		margin-top: 12em;
-		margin-bottom: -5em;
-		width: 90%;
+		margin-top: 5em;
+		margin-bottom: 5em;
+		width: 65%;
 	}
 	#afbeelding{
 		text-align: center;
 	}
 	.wrapper{
+	margin:1.8em;
 	  text-align: center;
-	  height: 200px;
-	  width: 720px;
+	  height: 100px;
+	  width: 320px;
 	  position: relative;
 	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
 	  border-radius: 10px;
@@ -60,7 +61,9 @@ Ik heb echt geen idee wat er steeds fout gaat.*/
 	}
 	.wrapper .display,
 	.wrapper span{
+	  width:80%
 	  text-align: center;
+	  justify-content: center;
 	  position: absolute;
 	  top: 50%;
 	  left: 50%;
@@ -69,19 +72,18 @@ Ik heb echt geen idee wat er steeds fout gaat.*/
 	.wrapper .display{
 	  text-align: center;
 	  z-index: 999;
-	  height: 170px;
-	  width: 690px;
+	  height: 80px;
+	  width: 300px;
 	  background: #1b1b1b;
 	  border-radius: 6px;
-	  text-align: center;
 	}
 	.display #time{
-	  text-align: center;
+		margin-top:-35px;
 	  width: 100%;
 	  line-height: 150px;
 	  color: #fff;
 	  text-align: center;
-	  font-size: 85px;
+	  font-size: 38px;
 	  font-weight: 600;
 	  letter-spacing: 1px;
 	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
@@ -95,7 +97,6 @@ Ik heb echt geen idee wat er steeds fout gaat.*/
 	  }
 	}
 	.wrapper span{
-		place-items: center;
 	  height: 100%;
 	  width: 100%;
 	  border-radius: 10px;
@@ -129,14 +130,12 @@ Ik heb echt geen idee wat er steeds fout gaat.*/
 		
 	}
 	h1{
-		font-size: 75px;
-		
+		font-size: 48px;
+		margin-top:2em;
 
 	}
 	p{
-		font-size: 50px;
-		margin-top:-3px;
-		margin-bottom: -70px;
+		font-size: 28px;
 		
 	}
 	#spacex{
@@ -146,79 +145,199 @@ Ik heb echt geen idee wat er steeds fout gaat.*/
 	#afbeelding{
 		text-align: right;
 	}
+	.wrapper{
+	margin:1.8em;
+	  text-align: center;
+	  height: 110px;
+	  width: 480px;
+	  position: relative;
+	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	  border-radius: 10px;
+	  cursor: default;
+	  animation: animate 1.5s linear infinite;
+	}
+	.wrapper .display,
+	.wrapper span{
+	  width:80%
+	  text-align: center;
+	  justify-content: center;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.wrapper .display{
+	  text-align: center;
+	  z-index: 999;
+	  height: 90px;
+	  width: 450px;
+	  background: #1b1b1b;
+	  border-radius: 6px;
+	}
+	.display #time{
+		margin-top:-35px;
+	  width: 100%;
+	  line-height: 150px;
+	  color: #fff;
+	  text-align: center;
+	  font-size: 60px;
+	  font-weight: 600;
+	  letter-spacing: 1px;
+	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  animation: animate 1.5s linear infinite;
+	}
 	
 }
 
 /*------------------------------- laptop ------------------------------- */
 @media only screen and (min-width: 1024px){
-header{
-		display:flex;
+body{
+		display:grid;
 		grid-template-columns: 1fr 1fr;
-		margin-top:20px;
+		grid-template-areas: 
+        "header main"; 
+	}
+	main{
+		display:grid;
+		margin-top:-4em;
+		margin-right:2em;
+		margin-bottom: 2em;
 	}
 	
 	h1{
-		font-size: 60px;
+		font-size: 50px;
 		margin-left: 0.5em;
+		margin-bottom: 0.2em;
 
 	}
-	h2 {
-		margin-top: 0.5em;
-		font-size: 140px;
-	}
 	p{
-		font-size: 22px;
+		font-size: 20px;
 		margin-bottom:5em;
 		margin-left: 1.2em;
 	}
 	#spacex{
-		margin-top: 7em;
-		margin-right: 10em;
-		width: 40%;
+		display:none;
 	}
 	#afbeelding{
-		text-align: right;
+		display:none;
 	}
+	.wrapper{
+	margin:1.8em;
+	  text-align: center;
+	  height: 110px;
+	  width: 430px;
+	  position: relative;
+	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	  border-radius: 10px;
+	  cursor: default;
+	  animation: animate 1.5s linear infinite;
+	}
+	.wrapper .display,
+	.wrapper span{
+	  width:80%
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.wrapper .display{
+	  z-index: 999;
+	  height: 90px;
+	  width: 400px;
+	  background: #1b1b1b;
+	  border-radius: 6px;
+	}
+	.display #time{
+	 margin-top:-35px;
+	  width: 100%;
+	  line-height: 150px;
+	  color: #fff;
+	  font-size: 48px;
+	  font-weight: 600;
+	  letter-spacing: 1px;
+	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  animation: animate 1.5s linear infinite;
+	}
+	
 }
 
 /*------------------------------- groot scherm ------------------------------- */
 @media only screen and (min-width: 1720px){
-/*	header{
-		display:flex;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin-top:20px;
+	body{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+        "header main"; 
 	}
 	main{
 		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		background-color:#300067;
-		margin-top: 80px;
+		margin-top:-4em;
+		margin-right:4em;
+		margin-bottom: 2em;
 	}
+	header{
+		margin-left:4em;
+	}
+	
 	h1{
 		font-size: 80px;
 		margin-left: 0.5em;
-		margin-right:2em;
+		margin-bottom: 0.2em;
 
-	}
-	h2 {
-		font-size: 48px;
-		padding-left: 4em;
 	}
 	p{
-		font-size: 38px;
-		margin-top:-3px;
+		font-size: 30px;
+		margin-bottom:5em;
 		margin-left: 1.2em;
 	}
-	.container{
-		display:flex;
-	 	width: 90%;
+	#spacex{
+		display:none;
+	}
+	#afbeelding{
+		display:none;
+	}
+	.wrapper{
+	margin:1.8em;
+	  text-align: center;
+	  height: 150px;
+	  width: 830px;
+	  position: relative;
+	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	  border-radius: 10px;
+	  cursor: default;
+	  animation: animate 1.5s linear infinite;
+	}
+	.wrapper .display,
+	.wrapper span{
+	  width:80%
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.wrapper .display{
+	  z-index: 999;
+	  height: 120px;
+	  width: 800px;
+	  background: #1b1b1b;
+	  border-radius: 6px;
+	}
+	.display #time{
+	 margin-top:-20px;
+	  width: 100%;
+	  line-height: 150px;
+	  color: #fff;
+	  font-size: 110px;
+	  font-weight: 600;
+	  letter-spacing: 1px;
+	  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  animation: animate 1.5s linear infinite;
 	}
 
-	#spacex{
-		margin: 2em;
-		padding-left: 2em;
-		float:right;
-		width: 70%;
-		transform: rotate(35deg);
-	}
-}*/
+}
