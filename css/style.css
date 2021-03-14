@@ -1,3 +1,10 @@
+
+/*Op de een of andere manier worden alle media queries overschreven...
+Dus als ik die van de ipad maak, doet die van de iphone het niet meer...
+Nu ik bezig ben met de laptop doet die van de ipad het ook niet meer...
+Ik heb echt geen idee wat er steeds fout gaat.*/
+
+
 /*------------------------------- mobile ------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 @media only screen and (min-width: 375px){
@@ -102,9 +109,6 @@
 	}
 }
 
-/*Op de een of andere manier wordt de querie van de ipad overgeschreven waardoor 
-de iphone er hetzelfde uit gaat zien, dat is niet de bedoeling.
-Ik weet niet wat hier fout gaat.*/
 
 
 	
