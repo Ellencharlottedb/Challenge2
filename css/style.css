@@ -1,6 +1,6 @@
 /*------------------------------- mobile ------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
-@media only screen and (min-width: 375px){
+/*@media only screen and (min-width: 375px){*/
 		*{
 	  margin: 0;
 	  padding: 0;
@@ -90,7 +90,7 @@
 	.wrapper span:last-child{
 	  filter: blur(20px);
 	}
-}
+
 
 
 	
@@ -137,6 +137,7 @@
 	}
 	#afbeelding{
 		text-align: right;
+	}
 }
 
 /*------------------------------- laptop ------------------------------- */
