@@ -1,6 +1,6 @@
 /*------------------------------- mobile ------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
-/*@media only screen and (min-width: 375px){*/
+@media only screen and (min-width: 375px){
 		*{
 	  margin: 0;
 	  padding: 0;
@@ -15,6 +15,7 @@
 	  background: #300067;
 	}
 	header{
+		grid-template-columns: 1fr;
 		color:#FFFFFF;
 		margin-left: 0,5em;
 		margin-bottom: -30px;
@@ -99,7 +100,11 @@
 	.wrapper span:last-child{
 	  filter: blur(20px);
 	}
+}
 
+/*Op de een of andere manier wordt de querie van de ipad overgeschreven waardoor 
+de iphone er hetzelfde uit gaat zien, dat is niet de bedoeling.
+Ik weet niet wat hier fout gaat.*/
 
 
 	
@@ -136,7 +141,7 @@
 	}
 	#afbeelding{
 		text-align: right;
-}
+	}
 	
 }
 
@@ -147,26 +152,30 @@ header{
 		grid-template-columns: 1fr 1fr;
 		margin-top:20px;
 	}
-	main{
-		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin-top: 80px;
-	}
+	
 	h1{
 		font-size: 60px;
 		margin-left: 0.5em;
-		/*width: 90vw;*/
 
 	}
 	h2 {
-		font-size: 32px;
-		padding-left: 1em;
+		margin-top: 0.5em;
+		font-size: 120px;
 	}
 	p{
 		font-size: 22px;
-		margin-top:-3px;
+		margin-bottom:5em;
 		margin-left: 1.2em;
 	}
+	#spacex{
+		margin-top: 8em;
+		margin-right: 10em;
+		width: 40%;
+	}
+	#afbeelding{
+		text-align: right;
+	}
+}
 
 /*------------------------------- groot scherm ------------------------------- */
 @media only screen and (min-width: 1720px){
